@@ -84,8 +84,9 @@ public class ProductStore extends TestBase{
 	  cart.cartBtn.click();
 	  placeOrder.placeOrderItem();
 	  Assert.assertEquals(placeOrder.ordermsg.getText(), "Thank you for your purchase!");
+	  Thread.sleep(1000);
 	  placeOrder.successMsg.click();
-	  Thread.sleep(2000);
+	  Thread.sleep(1000);
   }
   
   @AfterMethod

@@ -27,10 +27,11 @@ public class LoginPage extends TestBase{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void loginPage(String uname,String pwd) {
+	public void loginPage(String uname,String pwd) throws InterruptedException {
 		extentTest=reports.createTest("Login Page Test");
 		login.click();
 		username.sendKeys(uname);
+		Thread.sleep(1000);
 		password.sendKeys(pwd);
 		loginBtn.click();
 	}
