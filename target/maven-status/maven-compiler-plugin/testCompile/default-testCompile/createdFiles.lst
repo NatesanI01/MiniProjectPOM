@@ -1,0 +1,7 @@
+base\Utility.class
+testScripts\ProductStore.class
+base\TestBase.class
+pages\DeleteItemCart.class
+pages\LoginPage.class
+pages\AddItemToCart.class
+pages\PlaceOrderItem.class
