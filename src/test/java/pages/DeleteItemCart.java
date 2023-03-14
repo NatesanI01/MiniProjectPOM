@@ -30,7 +30,7 @@ public class DeleteItemCart extends TestBase {
 		beforePrice=rate.getText();
 		System.out.println(beforePrice);
 		deleteBtn.click();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		afterPrice=rate.getText();
 		System.out.println(afterPrice);
 	}

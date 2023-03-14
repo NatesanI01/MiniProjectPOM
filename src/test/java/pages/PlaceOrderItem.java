@@ -53,7 +53,7 @@ public class PlaceOrderItem extends TestBase{
 	
 	public void placeOrderItem() {
 		extentTest=reports.createTest("Place an Order Test");
-		wait=new WebDriverWait(driver,Duration.ofSeconds(100));
+		wait=new WebDriverWait(driver,Duration.ofSeconds(30));
 		if(items.size()!=0) {
 			wait.until(ExpectedConditions.elementToBeClickable(orderBtn));
 			orderBtn.click();

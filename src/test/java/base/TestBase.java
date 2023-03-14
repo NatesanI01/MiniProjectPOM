@@ -51,8 +51,8 @@ public class TestBase {
 			driver=new EdgeDriver();
 		}
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100));
+		driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(1));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 		driver.get(prop.getProperty("url"));
 	}
 	
