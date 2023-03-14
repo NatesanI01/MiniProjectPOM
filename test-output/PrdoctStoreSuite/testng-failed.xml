@@ -5,10 +5,7 @@
     <classes>
       <class name="testScripts.ProductStore">
         <methods>
-          <include name="placeOrder"/>
-          <include name="deleteItemcart"/>
-          <include name="addToCart" invocation-numbers="0 1 2 3"/>
-          <include name="signInPage"/>
+          <include name="addToCart" invocation-numbers="3"/>
           <include name="finish"/>
           <include name="finishExtent"/>
           <include name="setup"/>
