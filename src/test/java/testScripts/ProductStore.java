@@ -38,7 +38,7 @@ public class ProductStore extends TestBase{
   public void signInPage() throws InterruptedException{
 	  loginpage=new LoginPage();
 	  loginpage.loginPage(prop.getProperty("username"),prop.getProperty("pwd"));
-	  Assert.assertEquals(loginpage.successMsg.getText(), "Welcome glass");;
+	  Assert.assertEquals(loginpage.successMsg.getText(), "Welcome glass");
   }
   
   @Test(dataProvider="search",priority=2)
