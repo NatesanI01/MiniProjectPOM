@@ -51,12 +51,13 @@ public class PlaceOrderItem extends TestBase{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void placeOrderItem() {
+	public void placeOrderItem() throws InterruptedException {
 		extentTest=reports.createTest("Place an Order Test");
 		wait=new WebDriverWait(driver,Duration.ofSeconds(30));
 		if(items.size()!=0) {
 			wait.until(ExpectedConditions.elementToBeClickable(orderBtn));
 			orderBtn.click();
+			Thread.sleep(1000);
 			name.sendKeys(prop.getProperty("name"));
 			country.sendKeys(prop.getProperty("country"));
 			city.sendKeys(prop.getProperty("city"));
